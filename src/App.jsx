@@ -27,15 +27,15 @@ function App() {
   return (
     <div>
       <h1>Produtos</h1>
-
+      <div className='espaciotarjetas'>
       {produtos.map((producto)=>(
-        <li key={producto.nome}  className="card contenido-card">
+        <li key={producto.nome}  className="distribucion-contenido-card estilo-contenido-card card-espacio">
           {producto.nome}
           <img src={producto.image} className="imagenes"/>
           <h3>{producto.preco} </h3>
         </li>
       )) }
-
+</div>
     </div>
   );
 }
